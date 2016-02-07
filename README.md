@@ -1,5 +1,5 @@
-### blocipedia
+### blocmetrics
 ***
-SaaS Wiki Collaboration Tool
+API Tracking Service and Reporting Tool
 
-https://prasmalla-blocipedia.herokuapp.com/
+https://prasmalla-blocmetrics.herokuapp.com/

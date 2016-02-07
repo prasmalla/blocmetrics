@@ -16,9 +16,9 @@ require "sprockets/railtie"
 Bundler.require(*Rails.groups)
 
 # Load application ENV vars and merge with existing ENV vars. Loaded here so can use values in initializers.
-ENV.update YAML.load_file('config/application.yml')[Rails.env] rescue {}
+# ENV.update YAML.load_file('config/application.yml')[Rails.env] rescue {}
 
-module RailsBootstrapDevise
+module Blocmetrics
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
