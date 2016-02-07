@@ -3,4 +3,4 @@ deployment:
   prod:
     branch: master
     heroku:
-      appname: <%= ENV['HEROKU_APP_NAME'] %>
+      appname: prasmalla-blocmetrics
