@@ -1,4 +1,10 @@
 <div class="well well-lg">
   <h4><%= @user.name %> <small><%= link_to 'Edit', edit_user_registration_path %></small></h4>
   <h6><%= @user.email %></h6>
+  <%= link_to registered_applications_path, class: 'btn btn-default' do %>
+      <i class="glyphicon glyphicon-th-list"></i>&nbsp; My Applications
+    <% end %>
+  <%= link_to new_registered_application_path, class: 'btn btn-default' do %>
+    <i class="glyphicon glyphicon-plus"></i>&nbsp; Add application
+  <% end %>
 </div>

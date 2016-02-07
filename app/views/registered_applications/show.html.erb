@@ -1,0 +1,8 @@
+<h2>
+  <%= @registered_application.name %>
+  <small>
+    <%= link_to 'Edit', edit_registered_application_path %> |
+    <%= link_to 'Delete', @registered_application, method: :delete, data: {confirm: 'Delete application?'} %>
+  </small>
+</h2>
+<%= link_to @registered_application.url, @registered_application.url, target: '_blank' %>
