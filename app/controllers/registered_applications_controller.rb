@@ -2,10 +2,11 @@ class RegisteredApplicationsController < ApplicationController
   before_action :set_application, except: [:index, :new, :create]
 
   def index
-    @registered_applications = RegisteredApplication.all
+    @registered_applications = current_user.registered_applications.all
   end
 
   def show
+    @events = @registered_application.events.group_by(&:name)
   end
 
   def new

@@ -6,3 +6,9 @@
   </small>
 </h2>
 <%= link_to @registered_application.url, @registered_application.url, target: '_blank' %>
+
+<ul class="events">
+<% @events.each do |name, events| %>
+  <li><%= "#{name} [#{events.count} #{'event'.pluralize(events.count)}]" %></li>
+<% end %>
+</ul>
