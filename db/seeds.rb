@@ -20,3 +20,21 @@ user.save!
   user.skip_confirmation!
   user.save!
 end
+users = User.all
+
+# registered applications
+6.times do
+  application = users.sample.registered_applications.new(
+    name: Faker::Hipster.words(2).join(' '),
+    url: Faker::Internet.url
+  )
+  application.save!
+end
+apps = RegisteredApplication.all
+
+# application events
+9.times do
+  event = apps.sample.events.create(
+    name: Faker::Hacker.verb
+  )
+end
