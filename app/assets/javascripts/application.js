@@ -15,3 +15,13 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+// client-side event tracking
+// var blocmetrics = {};
+//   blocmetrics.report = function(eventName) {
+//   var event = { name: eventName };
+//   var request = new XMLHttpRequest();
+//   request.open("POST", "https://prasmalla-blocmetrics.herokuapp.com/api/events", true);
+//   request.setRequestHeader('Content-Type', 'application/json');
+//   request.send(JSON.stringify(event));
+// }

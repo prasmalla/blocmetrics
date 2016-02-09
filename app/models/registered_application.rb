@@ -4,4 +4,5 @@ class RegisteredApplication < ActiveRecord::Base
 
   validates :name, presence: true
   validates :url, presence: true, uniqueness: true
+  validates_format_of :url, with: URI::regexp(%w(http https))
 end
